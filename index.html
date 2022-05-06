@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Image Generator</title>
 </head>
-<body>
+<body style="margin: 0px; background: #0e0e0e; height: 100%">
     <script>
         function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min; // The maximum is exclusive and the minimum is inclusive
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min; // The maximum is exclusive and the minimum is inclusive
         }
-
-        document.write('<img src="images/' + getRandomInt(1, 60) + '.jpg">');
+        document.write('<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="images/' + getRandomInt(1, 60) + '.jpg">');
     </script>
 </body>
 </html>
